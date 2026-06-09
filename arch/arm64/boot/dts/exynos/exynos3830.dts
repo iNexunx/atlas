@@ -5537,6 +5537,8 @@
 			ldos = <0x03>;
 			ldo_number = <0x01 0x02 0x0b>;
 			usb-pm-qos-int = <0x61a80>;
+			snps,dis_u3_susphy_quirk;
+			snps,dis_u2_susphy_quirk;
 			phandle = <0x147>;
 		};
 	};
