@@ -56,7 +56,7 @@ min_tool_version=$(dirname $0)/min-tool-version.sh
 if [ "$1" = GNU -a "$2" = assembler ]; then
 	shift $(($# - 1))
 	version=$1
-	min_version=$($min_tool_version binutils)
+	min_version=$(sh $min_tool_version binutils)
 	name=GNU
 else
 	echo "$orig_args: unknown assembler invoked" >&2
